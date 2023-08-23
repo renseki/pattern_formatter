@@ -1,0 +1,29 @@
+Index: example/ios/Flutter/flutter_export_environment.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#!/bin/sh\r\n# This is a generated file; do not edit or check into version control.\r\nexport \"FLUTTER_ROOT=/Users/hahung/Developer/flutter\"\r\nexport \"FLUTTER_APPLICATION_PATH=/Users/hahung/Developer/Workspace/flutter/flutter_pattern_formatter/example\"\r\nexport \"COCOAPODS_PARALLEL_CODE_SIGN=true\"\r\nexport \"FLUTTER_TARGET=/Users/hahung/Developer/Workspace/flutter/flutter_pattern_formatter/example/lib/main.dart\"\r\nexport \"FLUTTER_BUILD_DIR=build\"\r\nexport \"FLUTTER_BUILD_NAME=1.0.0\"\r\nexport \"FLUTTER_BUILD_NUMBER=1\"\r\nexport \"DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9iNGZiMTEyMTRkZDJkZGE2Y2UwMTJkZDk4ZWE0OThlOWU4YjkxMjYyLw==\"\r\nexport \"DART_OBFUSCATION=false\"\r\nexport \"TRACK_WIDGET_CREATION=true\"\r\nexport \"TREE_SHAKE_ICONS=false\"\r\nexport \"PACKAGE_CONFIG=/Users/hahung/Developer/Workspace/flutter/flutter_pattern_formatter/example/.dart_tool/package_config.json\"\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/example/ios/Flutter/flutter_export_environment.sh b/example/ios/Flutter/flutter_export_environment.sh
+--- a/example/ios/Flutter/flutter_export_environment.sh	(revision 74a44ef3f6423ecbaa8f3c7aa5017cabf22be0bc)
++++ b/example/ios/Flutter/flutter_export_environment.sh	(date 1692764564580)
+@@ -1,14 +1,13 @@
+ #!/bin/sh
+ # This is a generated file; do not edit or check into version control.
+-export "FLUTTER_ROOT=/Users/hahung/Developer/flutter"
+-export "FLUTTER_APPLICATION_PATH=/Users/hahung/Developer/Workspace/flutter/flutter_pattern_formatter/example"
++export "FLUTTER_ROOT=F:\flutter_windows_3.0.1-stable\flutter"
++export "FLUTTER_APPLICATION_PATH=F:\StudioProjects\pattern_formatter\example"
+ export "COCOAPODS_PARALLEL_CODE_SIGN=true"
+-export "FLUTTER_TARGET=/Users/hahung/Developer/Workspace/flutter/flutter_pattern_formatter/example/lib/main.dart"
++export "FLUTTER_TARGET=lib\main.dart"
+ export "FLUTTER_BUILD_DIR=build"
+ export "FLUTTER_BUILD_NAME=1.0.0"
+ export "FLUTTER_BUILD_NUMBER=1"
+-export "DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9iNGZiMTEyMTRkZDJkZGE2Y2UwMTJkZDk4ZWE0OThlOWU4YjkxMjYyLw=="
+ export "DART_OBFUSCATION=false"
+ export "TRACK_WIDGET_CREATION=true"
+ export "TREE_SHAKE_ICONS=false"
+-export "PACKAGE_CONFIG=/Users/hahung/Developer/Workspace/flutter/flutter_pattern_formatter/example/.dart_tool/package_config.json"
++export "PACKAGE_CONFIG=.dart_tool/package_config.json"
