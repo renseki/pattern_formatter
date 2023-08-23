@@ -22,11 +22,11 @@ class ThousandsFormatter extends NumberInputFormatter {
   ThousandsFormatter({this.formatter, this.allowFraction = false})
       : _decimalSeparator = (formatter ?? _formatter).symbols.DECIMAL_SEP,
         _decimalRegex = RegExp(allowFraction
-            ? '[0-9]+([${(formatter ?? _formatter).symbols.DECIMAL_SEP}])?'
+            ? '\-?[0-9]+([${(formatter ?? _formatter).symbols.DECIMAL_SEP}])?'
             : r'\d+'),
         _decimalFormatter = FilteringTextInputFormatter.allow(RegExp(
             allowFraction
-                ? '[0-9]+([${(formatter ?? _formatter).symbols.DECIMAL_SEP}])?'
+                ? '\-?[0-9]+([${(formatter ?? _formatter).symbols.DECIMAL_SEP}])?'
                 : r'\d+'));
 
   @override
@@ -46,6 +46,16 @@ class ThousandsFormatter extends NumberInputFormatter {
     if (allowFraction && digits.endsWith(_decimalSeparator)) {
       return '$result$_decimalSeparator';
     }
+    // Fix the .0 or .01 or .10 and similar issues
+    if (digits.contains(_decimalSeparator)) {
+      final decimalPlacesValue = digits.split(_decimalSeparator);
+      final decimalOnly = decimalPlacesValue[1];
+      final digitsOnly = double.tryParse(decimalPlacesValue.first);
+      String result = (formatter ?? _formatter).format(digitsOnly);
+      result = result + '.' + '$decimalOnly';
+      return result;
+    }
+
     return result;
   }
 
